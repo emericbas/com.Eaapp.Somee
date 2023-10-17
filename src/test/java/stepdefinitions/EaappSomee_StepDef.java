@@ -16,8 +16,6 @@ import static org.junit.Assert.assertTrue;
 
 public class EaappSomee_StepDef {
     EaappSomee_Page page=new EaappSomee_Page();
-    String expectedEmployeeName;
-    String actualEmployeeName;
     List<String> NameList;
 
     @Given("Navigate to eaapSomee Application")
