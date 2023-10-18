@@ -41,6 +41,7 @@ public class Driver {
 
                     driver = new SafariDriver();
                     break;
+
                 default:
 
                     ChromeOptions options = new ChromeOptions();

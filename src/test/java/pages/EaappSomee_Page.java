@@ -17,7 +17,7 @@ public class EaappSomee_Page {
     public WebElement userNameField;
     @FindBy(xpath= "//input[@id='Password']")
     public WebElement passwordField;
-    @FindBy(className = "btn btn-default")
+    @FindBy(xpath="//input[@type='submit']")
     public WebElement logInButton;
     @FindBy(xpath= "//a[text()='Employee List']")
     public WebElement employeeListLink;
