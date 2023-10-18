@@ -1,7 +1,6 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.EaappSomee_Page;
 import utilities.ConfigurationReader;
@@ -14,13 +13,18 @@ import java.util.List;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class EaappSomee_StepDef {
+public class EaappSomee_StepDefNew {
+
     EaappSomee_Page page=new EaappSomee_Page();
     List<String> NameList;
 
+
+
+
     @Given("Navigate to eaapSomee Application")
-    public void navigateToEaapSomeeApplication() {
-       Driver.getDriver().get(ConfigurationReader.getProperty("eaappUrl"));
+    public void navigate_to_eaap_somee_application() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("eaappUrl"));
+
     }
     @Then("Login as admin")
     public void login_as_admin() {
@@ -35,25 +39,24 @@ public class EaappSomee_StepDef {
     }
     @Then("Create a new employee")
     public void create_a_new_employee() {
-       page.createNewLink.click();
-       page.nameField.sendKeys("Cirem Meric");
-       page.salaryField.sendKeys("30000");
-       page.durationWorkedField.sendKeys("4");
-       page.gradeField.sendKeys("4");
-       page.emailField.sendKeys("emine@gmail.com");
-       page.createButton.click();
+        page.createNewLink.click();
+        page.nameField.sendKeys("Cirem Meric");
+        page.salaryField.sendKeys("30000");
+        page.durationWorkedField.sendKeys("4");
+        page.gradeField.sendKeys("4");
+        page.emailField.sendKeys("emine@gmail.com");
+        page.createButton.click();
     }
     @Then("Verify the new employee info in Employee List page")
     public void verify_the_new_employee_info_in_employee_list_page() {
         NameList=new ArrayList<>();
 
         for (WebElement name : page.nameList) {
-          NameList.add( name.getText());
+            NameList.add( name.getText());
 
         }
 
         assertTrue(NameList.contains("Cirem Meric"));
-
 
     }
     @Then("Delete the new employee")
@@ -67,7 +70,7 @@ public class EaappSomee_StepDef {
     }
     @Then("Verify the new employee deleted in Employee List page")
     public void verify_the_new_employee_deleted_in_employee_list_page() {
-       page.employeeListLink.click();
+        page.employeeListLink.click();
         NameList=new ArrayList<>();
 
         for (WebElement name : page.nameList) {
@@ -76,7 +79,6 @@ public class EaappSomee_StepDef {
         }
 
         assertFalse(NameList.contains("Cirem Meric"));
-
     }
 
 

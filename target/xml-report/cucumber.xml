@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.256" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Login to eaapSomee Application" name="TC_01 Login ,Create and Delete the employee List on the EaapSomee Application" time="0.038">
+<failure/>
+<system-out><![CDATA[
+Given Navigate to eaapSomee Application.....................................undefined
+Then Login as admin.........................................................skipped
+And Go to Employee List page................................................skipped
+Then Create a new employee..................................................skipped
+And Verify the new employee info in Employee List page......................skipped
+Then Delete the new employee................................................skipped
+Then Verify the new employee deleted in Employee List page..................skipped
+]]></system-out>
+</testcase>
+</testsuite>

@@ -13,11 +13,11 @@ public class EaappSomee_Page {
     }
     @FindBy(id= "loginLink")
     public WebElement loginLink;
-    @FindBy(xpath= "//input[@id='UserName']")
+    @FindBy(css = "input#UserName")
     public WebElement userNameField;
     @FindBy(xpath= "//input[@id='Password']")
     public WebElement passwordField;
-    @FindBy(xpath= "//input[@type='submit']")
+    @FindBy(className = "btn btn-default")
     public WebElement logInButton;
     @FindBy(xpath= "//a[text()='Employee List']")
     public WebElement employeeListLink;

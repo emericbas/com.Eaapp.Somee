@@ -1,4 +1,4 @@
-@eaap
+
 Feature:Login to eaapSomee Application
 
   Scenario: TC_01 Login ,Create and Delete the employee List on the EaapSomee Application
