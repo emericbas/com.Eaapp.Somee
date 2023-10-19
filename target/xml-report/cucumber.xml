@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.233" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Login to eaapSomee Application" name="TC_01 Login ,Create and Delete the employee List on the EaapSomee Application" time="12.145">
+<testsuite name="Cucumber" time="14.422" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login to eaapSomee Application" name="TC_01 Login ,Create and Delete the employee List on the EaapSomee Application" time="14.26">
 <system-out><![CDATA[
 Given Navigate to eaapSomee Application.....................................passed
 Then Login as admin.........................................................passed
